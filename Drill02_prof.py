@@ -50,7 +50,7 @@ while True:
     #먼저 함수 호출 -> 정의도 안됐는데? ->이게 무슨 코드인지 보이게
     run_circle()
     run_rectangle()
-    break
+    
 
 close_canvas()
     
