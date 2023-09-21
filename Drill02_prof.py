@@ -10,7 +10,7 @@ def render_frame(x, y):
     clear_canvas_now()
     grass.draw_now(400, 30)
     character.draw_now(x, y)
-    delay(0.1)
+    delay(0.01)
 
 def run_circle():
     print('CIRCLE')
@@ -29,11 +29,11 @@ def run_rectangle():
     print('RECTANGLE')
 
     #bottom line
-    for x in range(20, 780+1, 5):
+    for x in range(20, 780+1, 5):  # +1해주는 이유 780까지 가서 정확하게 실행
         render_frame(x, 90) #x,y 위치에 캐릭터 그려줄 수 있는 함수
 
     #top line
-    for x in range(780, 20, -5):
+    for x in range(780, 20-1, -5):
         render_frame(x, 550)
 
 
