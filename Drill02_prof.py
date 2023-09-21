@@ -24,11 +24,18 @@ def run_circle():
         character.draw_now(x, y)
         delay(0.01)
             
-    pass  #아무것도 안한다. 근데 실행 ㄱㄴ 아무것도 하지않는 함수의 기능 함.(뼈대 만들기)
+    #pass :아무것도 안한다. 근데 실행 ㄱㄴ 아무것도 하지않는 함수의 기능 함.(뼈대 만들기)
 
 def run_rectangle():
     print('RECTANGLE')
-    pass
+
+    #bottom line
+    for x in range(20, 780+1, 5):
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x, 90)
+        delay(0.01)
+    
 
 
 while True:
